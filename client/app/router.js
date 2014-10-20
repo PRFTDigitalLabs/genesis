@@ -1,5 +1,6 @@
-import index from './views/index';
-import profile from './views/profile';
+import viewOne from './views/one';
+import viewTwo from './views/two';
+import viewThree from './views/three';
 
 var ApplicationRouter = Backbone.Router.extend({
   initialize: function(){
@@ -7,30 +8,27 @@ var ApplicationRouter = Backbone.Router.extend({
   },
   _trackPageView: function(){
     var url = Backbone.history.getFragment();
-    _gaq.push(['_trackPageview', "/#{url}"]);
+    _gaq.push(['_trackPageview', "/{url}"]);
   },
 
   routes: {
-    '':             'index',
-    'coverage':     'coverage',
-    'predictions':  'predictions',
-    'history':      'history'
+    '':       'one',
+    'one':    'one',
+    'two':    'two',
+    'three':  'three'
   },
 
-  index: function(){
-    window.location.hash = '/coverage';
+  one: function(){
+    var view = new viewOne({id: 'one'});
+    Backbone.trigger('manager:goto', view, 'one');
   },
-  coverage: function(){
-    var view = new index({id: 'coverage'});
-    Backbone.trigger('manager:goto', view, 'coverage');
+  two: function(){
+    var view = new viewTwo({id: 'two'});
+    Backbone.trigger('manager:goto', view, 'two');
   },
-  predictions: function(){
-    var view = new profile({id: 'predictions'});
-    Backbone.trigger('manager:goto', view, 'predictions');
-  },
-  history: function(){
-    var view = new profile({id: 'history'});
-    Backbone.trigger('manager:goto', view, 'history');
+  three: function(){
+    var view = new viewThree({id: 'three'});
+    Backbone.trigger('manager:goto', view, 'three');
   }
 
 });

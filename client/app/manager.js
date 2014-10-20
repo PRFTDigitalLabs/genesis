@@ -39,28 +39,28 @@ var manager = Backbone.View.extend({
   },
 
   states: {
-    coverage: {
+    one: {
       enter: function(o){},
       exit: function(o){},
       transitions:{
-        'onExitTo:predictions': transitions.slideLeft,
-        'onExitTo:history': transitions.slideLeft
+        'onExitTo:two': transitions.slideLeft,
+        'onExitTo:three': transitions.slideLeft
       }
     },
-    predictions: {
+    two: {
       enter: function(){},
       exit: function(){},
       transitions:{
-        'onExitTo:coverage': transitions.slideRight,
-        'onExitTo:history': transitions.slideRight
+        'onExitTo:one': transitions.slideRight,
+        'onExitTo:three': transitions.slideLeft
       }
     },
-    history: {
+    three: {
       enter: function(){},
       exit: function(){},
       transitions:{
-        'onExitTo:coverage': transitions.slideRight,
-        'onExitTo:predictions': transitions.slideLeft
+        'onExitTo:one': transitions.slideRight,
+        'onExitTo:two': transitions.slideRight
       }
     }
   }

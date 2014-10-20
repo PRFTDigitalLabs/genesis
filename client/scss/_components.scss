@@ -6,137 +6,38 @@ nav {
   top: 0;
   right: 0;
   
-
   ul {
     display: inline-block;
-    margin: 0;
+    margin: 0 30px 0 0;
     padding: 0;
   }
+  
   li {
-    padding: 7px 0;
+    padding: 15px 0;
     display: inline-block;
-    margin-right: 15px;
     text-align: center;
     border-top: 2px solid transparent;
     vertical-align: top;
   }
+
   li.item {
-    i {
-      display: block;
-    }
     a {
       @extend h6;
       transition: color 0.2s;
       text-decoration: none;
-      color: rgba(255,255,255,0.4);
+      color: rgba(0,0,0,0.4);
     }
     &.active {
-      border-top: 2px solid rgba(255,255,255,0.8);
+      border-top: 2px solid rgba(0,0,0,0.8);
     }
     &.active a,
     &:hover a {
-      color: rgba(255,255,255,1);
+      color: rgba(0,0,0,1);
     }
   }
+
   li.item + li.item {
-    margin-left: 10px;
+    margin-left: 25px;
   } 
-  li .btn {
-    margin: 15px 15px 0;
-  }
 
 }
-
-// Tooltip
-// ==============================================================================
-.tooltip {
-  @extend %layer-over;
-  display: inline-block;
-  min-width: 200px;
-  min-height: 90px;
-  background: #fff;
-  color: $text-dark;
-  padding: 16px 20px;
-}
-
-// Carousel / Cards
-// ==============================================================================
-.carousel {
-  overflow: hidden;
-}
-.carousel-inner {
-  overflow: auto;
-}
-.card {
-  background: #fff;
-  color: $text-dark;
-  float: left;
-  position: relative;
-
-  & + .card {
-    margin-left: 14px;
-  }
-
-  &:hover {
-    cursor: move;
-  }
-}
-.coverage-card {
-  width: 50%;
-  min-height: 350px;
-
-  .content,
-  .thumb {
-    position: absolute;
-    top: 0;
-    height: 100%;
-     z-index: 1;
-  }
-  .content {
-    left: 0;
-    padding: 60px 30px 30px;
-    width: 53%;
-  }
-  .buttons {
-    position: absolute;
-    left: 30px;
-    bottom: 30px;
-  }
-  .thumb {
-    display: block;
-    right: -1px;
-    background: url('../img/card-thumb.jpg') no-repeat center;
-    background-size: cover;
-    width: 47%;
-
-    &:before {
-      transition: background 0.3s;
-      @extend %pseudo-block;
-      width: 46px;
-      height: 46px;
-      background-color: rgba(0,0,0,0.65);
-      top: 50%;
-      left: 50%;
-      margin-top: -23px;
-      margin-left: -23px;
-      z-index: 2;
-      border-radius: 46px;
-    }
-    &:hover:before {
-      background-color: rgba(0,0,0,1);
-    }
-    &:after {
-      @extend %pseudo-block;
-      @extend %arrow-right;
-      top: 50%;
-      left: 50%;
-      margin-top: -6px;
-      margin-left: -2px;
-      z-index: 3;
-    }
-
-  }
-}
-
-
-

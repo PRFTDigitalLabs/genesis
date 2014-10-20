@@ -12,18 +12,18 @@ var transitions = {
     q.push(function(cb){
       $next.css({
         opacity: 0,
-        top: '50px'
+        left: '50px'
       });
       cb();
     });
     q.push(function(cb){
       TweenLite.to($prev, 0.5, {
-        top: '-50px',
+        left: '-50px',
         opacity: 0,
         ease:Expo.easeOut
       })
       TweenLite.to($next, 0.5, {
-        top: 0,
+        left: 0,
         opacity: 1,
         delay: 0.0,
         ease:Expo.easeOut,
@@ -45,18 +45,18 @@ var transitions = {
     q.push(function(cb){
       $next.css({
         opacity: 0,
-        top: '-50px'
+        left: '-50px'
       });
       cb();
     });
     q.push(function(cb){
       TweenLite.to($prev, 0.5, {
-        top: '50px',
+        left: '50px',
         opacity: 0,
         ease:Expo.easeOut
       })
       TweenLite.to($next, 0.5, {
-        top: 0,
+        left: 0,
         opacity: 1,
         delay: 0.0,
         ease:Expo.easeOut,
