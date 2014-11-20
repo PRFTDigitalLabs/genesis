@@ -1,0 +1,349 @@
+{
+  "queueList": [
+      { 
+        "name": "Queue Rollup",
+        "serviceLevel": 0.91,
+        "queued": 4,
+        "serviceLevelPct" : "91%",        
+        "queueDepth" : "12%",
+        "avgQueueTime" : "0:23",
+        "longestQueueTime" : "02:21",
+        "answeredSessions" : 233,
+        "ronas" : 1,
+        "outboundCalls" : 45,
+        "onCallAgents" : 234,
+        "avgExcessTime" : "01:23",
+        "abandonRate" : "2%",
+        "avgTimeToAbandon" : "02:34",
+        "avgSpeedOfAnswer" : "00:38",
+        "avgHandleTime" : "05:28",
+        "onPhoneAgents" : 13,
+        "inboundCalls" : 12
+      },
+      { 
+        "name": "Account",
+        "serviceLevel": 0.88,
+        "queued": 0
+      },
+      { 
+        "name": "Support",
+        "serviceLevel": 0.93,
+        "queued": 0
+      },
+      { 
+        "name": "Product",
+        "serviceLevel": 0.54,
+        "serviceLevelPct" : "54%",
+        "queued": 3,
+        "queueDepth" : "33%",
+        "avgQueueTime" : "0:15",
+        "longestQueueTime" : "12:21",
+        "answeredSessions" : 45,
+        "ronas" : 2,
+        "outboundCalls" : 9,
+        "onCallAgents" : 11,
+        "avgExcessTime" : "01:23",
+        "abandonRate" : "3%",
+        "avgTimeToAbandon" : "02:34",
+        "avgSpeedOfAnswer" : "00:38",
+        "avgHandleTime" : "05:28",
+        "onPhoneAgents" : 13,
+        "inboundCalls" : 32
+      },
+      { 
+        "name": "Billing",
+        "serviceLevel": 0.98,
+        "queued": 0
+      },
+      { 
+        "name": "Orders",
+        "serviceLevel": 0.78,
+        "queued": 1
+      },
+      { 
+        "name": "Website",
+        "serviceLevel": 0.90,
+        "queued": 0
+      }    
+  ],
+
+  "sessionList": [
+    
+    {
+      "type":"active",
+      "modality":"voice",
+      "caller":"773-593-7643",
+      "agent":"Mark Johnson",
+      "duration":"00:10:24"      
+    },
+
+    {
+      "type":"active",
+      "modality":"voice",
+      "caller":"773-593-7643",
+      "agent":"Mark Johnson",
+      "duration":"00:10:24"      
+    },
+
+    {
+      "type":"active",
+      "modality":"voice",
+      "caller":"773-593-7643",
+      "agent":"Mark Johnson",
+      "duration":"00:10:24"      
+    },
+
+    {
+      "type":"active",
+      "modality":"voice",
+      "caller":"773-593-7643",
+      "agent":"Mark Johnson",
+      "duration":"00:10:24"      
+    },
+        {
+      "type":"active",
+      "modality":"voice",
+      "caller":"773-593-7643",
+      "agent":"Mark Johnson",
+      "duration":"00:10:24"      
+    },
+
+    {
+      "type":"active",
+      "modality":"voice",
+      "caller":"773-593-7643",
+      "agent":"Mark Johnson",
+      "duration":"00:10:24"      
+    },
+    {
+      "type":"active",
+      "modality":"voice",
+      "caller":"773-593-7643",
+      "agent":"Mark Johnson",
+      "duration":"00:10:24"      
+    },
+
+    {
+      "type":"active",
+      "modality":"voice",
+      "caller":"773-593-7643",
+      "agent":"Mark Johnson",
+      "duration":"00:10:24"      
+    },
+    {
+      "type":"queued",
+      "modality":"voice",
+      "caller":"773-593-7643",      
+      "duration":"00:10:24"      
+    },
+
+    {
+      "type":"queued",
+      "modality":"voice",
+      "caller":"773-593-7643",      
+      "duration":"00:10:24"      
+    },
+
+    {
+      "type":"queued",
+      "modality":"voice",
+      "caller":"773-593-7643",      
+      "duration":"00:10:24"      
+    },
+
+    {
+      "type":"queued",
+      "modality":"voice",
+      "caller":"773-593-7643",      
+      "duration":"00:10:24"      
+    },
+
+    {
+      "type":"queued",
+      "modality":"voice",
+      "caller":"773-593-7643",      
+      "duration":"00:10:24"      
+    },
+
+    {
+      "type":"queued",
+      "modality":"voice",
+      "caller":"773-593-7643",      
+      "duration":"00:10:24"      
+    }
+  ],
+  
+  "teamList":[
+    {
+      "name": "Team 1",
+      "serviceLevel" : 0.92,
+      "queued": 2
+    },
+    {
+      "name": "Team 2",
+      "serviceLevel" : 0.72,
+      "queued": 8
+    },
+    {
+      "name": "Team 3",
+      "serviceLevel" : 0.98,
+      "queued": 0
+    }
+  ],
+  "agentList":[
+    {
+      "name":"Michael Scott",
+      "team":"Team 1",
+      "queue": "Product",
+      "status": "available",
+      "message" : "",
+      "answered": 8,
+      "asa": "00:18",
+      "ronas" : 0,
+      "aht" : "00:10:35"
+    },
+    {
+      "name":"Jennifer Lawrence",
+      "team":"Team 1",
+      "queue": "Product",
+      "status": "available",
+      "message" : "",
+      "answered": 8,
+      "asa": "00:18",
+      "ronas" : 0,
+      "aht" : "00:10:35"
+    },
+    {
+      "name":"John Stamos",
+      "team":"Team 1",
+      "queue": "Product",
+      "status": "available",
+      "message" : "",
+      "answered": 8,
+      "asa": "00:18",
+      "ronas" : 0,
+      "aht" : "00:10:35"
+    },
+    {
+      "name":"Patrick Rodriguez",
+      "team":"Team 1",
+      "queue": "Queue Rollup",
+      "status": "available",
+      "message" : "Away at lunch",
+      "answered": 8,
+      "asa": "00:18",
+      "ronas" : 0,
+      "aht" : "00:10:35"
+    },
+    {
+      "name":"Heathcliff Huxtable",
+      "team":"Team 1",
+      "queue": "Product",
+      "status": "available",
+      "message" : "",
+      "answered": 8,
+      "asa": "00:18",
+      "ronas" : 0,
+      "aht" : "00:10:35"
+    },
+    {
+      "name":"Donald Glover",
+      "team":"Team 1",
+      "queue": "Product",
+      "status": "available",
+      "message" : "",
+      "answered": 8,
+      "asa": "00:18",
+      "ronas" : 0,
+      "aht" : "00:10:35"
+    },
+    {
+      "name":"Mitchell Barnett",
+      "team":"Team 1",
+      "queue": "Product",
+      "status": "available",
+      "message" : "",
+      "answered": 8,
+      "asa": "00:18",
+      "ronas" : 0,
+      "aht" : "00:10:35"
+    },
+    {
+      "name":"Kaitie McKormick",
+      "team":"Team 1",
+      "queue": "Product",
+      "status": "available",
+      "message" : "",
+      "answered": 8,
+      "asa": "00:18",
+      "ronas" : 0,
+      "aht" : "00:10:35"
+    },
+    {
+      "name":"Russel Shinpo",
+      "team":"Team 1",
+      "queue": "Product",
+      "status": "available",
+      "message" : "",
+      "answered": 8,
+      "asa": "00:18",
+      "ronas" : 0,
+      "aht" : "00:10:35"
+    },
+    {
+      "name":"Adam Wirdak",
+      "team":"Team 1",
+      "queue": "Product",
+      "status": "available",
+      "message" : "",
+      "answered": 8,
+      "asa": "00:18",
+      "ronas" : 0,
+      "aht" : "00:10:35"
+    },
+    {
+      "name":"Kaitie McKormick",
+      "team":"Team 1",
+      "queue": "Product",
+      "status": "available",
+      "message" : "",
+      "answered": 8,
+      "asa": "00:18",
+      "ronas" : 0,
+      "aht" : "00:10:35"
+    },
+    {
+      "name":"Xander Pollock",
+      "team":"Team 1",
+      "queue": "Product",
+      "status": "available",
+      "message" : "",
+      "answered": 8,
+      "asa": "00:18",
+      "ronas" : 0,
+      "aht" : "00:10:35"
+    },
+    {
+      "name":"Andy Santos-Johnson",
+      "team":"Team 1",
+      "queue": "Product",
+      "status": "available",
+      "message" : "",
+      "answered": 8,
+      "asa": "00:18",
+      "ronas" : 0,
+      "aht" : "00:10:35"
+    },
+    {
+      "name":"Mai-Chi Vu",
+      "team":"Team 1",
+      "queue": "Product",
+      "status": "available",
+      "message" : "",
+      "answered": 8,
+      "asa": "00:18",
+      "ronas" : 0,
+      "aht" : "00:10:35"
+    }
+  ]
+}

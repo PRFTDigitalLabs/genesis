@@ -59,6 +59,29 @@ module.exports = function(grunt) {
                     cwd: 'client/img/',
                     src: ['**'],
                     dest: 'build/img/'
+                },{
+                    expand: true,
+                    cwd: 'client/data/',
+                    src: ['**'],
+                    dest: 'build/data/'
+                },
+                {
+                    expand: true,
+                    cwd: 'client/fonts/',
+                    src: ['**'],
+                    dest: 'build/fonts/'
+                },
+                {
+                    expand: true,
+                    cwd: './',
+                    src: ['favicon.ico'],
+                    dest: 'build/'
+                },
+                {
+                    expand: true,
+                    cwd: 'public/',
+                    src: ['index.html'],
+                    dest: 'build/'
                 }]
             }
         },
