@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-	<meta charset="UTF-8">
-	<title>Genesis</title>
-	<link rel="stylesheet" href="css/main.css" />	
-    <title>Gesnesis</title>
+    <meta charset="UTF-8">
+    <title>Genesis - lite</title>
+    <link rel="stylesheet" href="css/main.css" />
     <link href="img/apple-200x200.jpg" rel="apple-touch-icon-precomposed" sizes='200x200' />
     <link href="img/apple-152x152.jpg" rel="apple-touch-icon-precomposed" sizes='152x152' />
     <link href="img/apple-144x144.jpg" rel="apple-touch-icon-precomposed" sizes='144x144' />
@@ -17,17 +17,18 @@
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
 </head>
-<body>
-	
-	<nav></nav>
-	<div class="root"></div>
 
-<script src="js/vendor-built.js"></script>
-<script src="js/templates-built.js"></script>
-<script src="js/app-built.js"></script>
-<script>
-	var App = requireModule('genesis/app').default;
-	new App();
-</script>
+<body>
+    <div id="nav"></div>
+    <div id="root"></div>
+
+    <script src="js/vendor-built.js"></script>
+    <script src="js/templates-built.js"></script>
+    <script src="js/app-built.js"></script>
+    <script>
+        var App = requireModule('genesis/app').default;
+        new App();
+    </script>
 </body>
+
 </html>

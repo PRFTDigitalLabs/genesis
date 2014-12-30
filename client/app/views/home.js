@@ -1,7 +1,7 @@
 import BaseView from './baseView';
 
-var two = BaseView.extend({
-    
+var home = BaseView.extend({
+
     initialize: function() {
 
     },
@@ -12,12 +12,12 @@ var two = BaseView.extend({
 
     render: function() {
 
-        var template = JST['client/templates/two.hbs'];
+        var template = JST['client/templates/home.hbs'];
         this.$el.html(template);
+
     },
 
     transitionIn: function(callback) {
-        
 
         TweenLite.fromTo(this.$('h1'), .5, {
             x: -100,
@@ -28,18 +28,25 @@ var two = BaseView.extend({
             ease: 'easeOutExpo'
         });
 
+        if (_.isFunction(callback)) {
+            callback();
+        };
+
     },
+
     transitionOut: function(callback) {
 
         var self = this;
 
-         TweenLite.to(this.$('h1'), .5, {
+        TweenLite.to(this.$('h1'), .5, {
             x: 100,
             autoAlpha: 0,
-            ease:'easeInExpo',
-            onComplete: function(){
-                callback();
-                
+            ease: 'easeInExpo',
+            onComplete: function() {
+                if (_.isFunction(callback)) {
+                    callback();
+                };
+
             }
         });
 
@@ -56,4 +63,4 @@ var two = BaseView.extend({
 
 });
 
-export default two;
+export default home;

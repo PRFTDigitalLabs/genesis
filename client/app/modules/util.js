@@ -1,23 +1,29 @@
- var util = {
-	mapRange: function(value, srcRange, dstRange) {
-	    var adjValue, dstMax, srcMax;
-	    if (value < srcRange[0] || value > srcRange[1]) {
-	      return NaN;
-	    }
-	    srcMax = srcRange[1] - srcRange[0];
-	    dstMax = dstRange[1] - dstRange[0];
-	    adjValue = value - srcRange[0];
-	    return (adjValue * dstMax / srcMax) + dstRange[0];
-	},
-	queue: function(q, result) {
-	  if (q.length) {
-	    q.shift()(function() {
-	      return util.queue(q, result);
-	    });
-	  } else {
-	    return result();
-	  }
-	}
+function Utils() {
+
+    this.init();    
+    return this;
 }
 
-export default = util;
+_.extend(Utils.prototype, {
+    init:function(){
+
+        Handlebars.registerHelper("formatMoney", function(value) {                                  
+
+             var parts = value.toString().split(".");
+                parts[0] = parts[0].replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                parts = parts.join(".");
+            
+            return "$" + parts;
+        });       
+    },
+    formatMoney: function (value) {
+        var parts = value.toString().split(".");
+            parts[0] = parts[0].replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+            parts = parts.join(".");
+        
+        return "$" + parts;
+    }
+
+});
+var utils = new Utils();
+export default utils;
