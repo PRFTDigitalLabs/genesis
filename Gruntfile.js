@@ -60,6 +60,12 @@ module.exports = function(grunt) {
                     src: ['**'],
                     dest: 'build/img/'
                 },
+                {
+                    expand: true,
+                    cwd: 'client/fonts/',
+                    src: ['**'],
+                    dest: 'build/fonts/'
+                },
                 {         
                     expand: true,           
                     cwd: 'public',
@@ -99,6 +105,13 @@ module.exports = function(grunt) {
             },
             images: {
                 files: ['client/img/*'],
+                tasks: ['copy'],
+                options: {
+                    debounceDelay: 300
+                }
+            },
+            fonts: {
+                files: ['client/fonts/*'],
                 tasks: ['copy'],
                 options: {
                     debounceDelay: 300
